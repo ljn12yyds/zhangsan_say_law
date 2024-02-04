@@ -2,6 +2,13 @@
 from transformers import AutoTokenizer, AutoModelForCausalLM, GenerationConfig
 import torch
 import streamlit as st
+from modelscope import snapshot_download
+
+def on_start():
+    st.session_state.messages = []
+
+if 'messages' not in st.session_state:
+    on_start()
 
 from modelscope import snapshot_download
 
