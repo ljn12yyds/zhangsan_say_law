@@ -8,7 +8,7 @@ from modelscope import snapshot_download
 # 在侧边栏中创建一个标题和一个链接
 with st.sidebar:
     st.markdown("## InternLM LLM")
-	"欢迎光临张三普法"
+    "欢迎光临张三普法"
     "[GitHub](https://github.com/ljn12yyds/zhangsan_say_law)"
     # 创建一个滑块，用于选择最大长度，范围在0到1024之间，默认值为512
     max_length = st.slider("max_length", 0, 1024, 512, step=1)
