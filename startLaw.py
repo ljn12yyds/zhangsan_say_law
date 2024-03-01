@@ -172,8 +172,8 @@ def load_model():
 def prepare_generation_config():
     with st.sidebar:
         # 使用 Streamlit 的 markdown 函数添加 Markdown 文本
-        st.image('assets/aiwei_logo.jpg', width=1, caption='EmoLLM-aiwei AI Logo', use_column_width=True)
-        st.markdown("[访问 EmoLLM 官方repo](https://github.com/aJupyter/EmoLLM)")
+        st.image('assets/lindaiyu.jpg', width=1, caption='林黛玉', use_column_width=True)
+        st.markdown("[访问 黛玉普法 官方repo](https://github.com/ljn12yyds/zhangsan_say_law)")
 
         max_length = st.slider("Max Length", min_value=8, max_value=32768, value=32768)
         top_p = st.slider("Top P", 0.0, 1.0, 0.8, step=0.01)
