@@ -172,7 +172,7 @@ def load_model():
 def prepare_generation_config():
     with st.sidebar:
         # 使用 Streamlit 的 markdown 函数添加 Markdown 文本
-        st.image('asserts/lindaiyu.jpg', width=1, caption='林黛玉', use_column_width=True)
+        st.image('assets/lindaiyu.jpg', width=1, caption='林黛玉', use_column_width=True)
         st.markdown("[访问 黛玉普法 官方repo](https://github.com/ljn12yyds/zhangsan_say_law)")
 
         max_length = st.slider("Max Length", min_value=8, max_value=32768, value=32768)
@@ -217,8 +217,8 @@ def main():
     model, tokenizer = load_model()
     print("load model end.")
 
-    user_avator = "asserts/user.png"
-    robot_avator = "asserts/robot.png"
+    user_avator = "assets/user.png"
+    robot_avator = "assets/robot.png"
 
     st.title("黛玉普法")
 
